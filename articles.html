@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>所有文章 | 我的博客</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">June的花园</a>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="articles.html" class="active">文章</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- 页面标题 -->
+  <header class="page-header">
+    <h1>所有文章</h1>
+    <p>记录学习、思考与生活的点滴</p>
+  </header>
+
+  <!-- 文章列表 -->
+  <section class="section">
+    <div class="container">
+      <div class="articles-grid">
+        <article class="article-card">
+          <div class="article-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <span class="article-category">技术</span>
+          </div>
+          <div class="article-content">
+            <h3 class="article-title">
+              <a href="article-detail.html?id=1">如何开始学习前端开发</a>
+            </h3>
+            <p class="article-excerpt">从零开始的前端学习路线，包含 HTML、CSS、JavaScript 的学习资源和实践建议...</p>
+            <div class="article-meta">
+              <span class="article-date">2026年3月20日</span>
+              <span class="article-readtime">5 分钟阅读</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <span class="article-category">生活</span>
+          </div>
+          <div class="article-content">
+            <h3 class="article-title">
+              <a href="article-detail.html?id=2">我的 2026 年度计划</a>
+            </h3>
+            <p class="article-excerpt">新的一年，新的目标。分享我在学习、工作和生活中的规划与期待...</p>
+            <div class="article-meta">
+              <span class="article-date">2026年3月15日</span>
+              <span class="article-readtime">3 分钟阅读</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <span class="article-category">随笔</span>
+          </div>
+          <div class="article-content">
+            <h3 class="article-title">
+              <a href="article-detail.html?id=3">写作的意义</a>
+            </h3>
+            <p class="article-excerpt">为什么我开始写博客？写作如何帮助我整理思绪、记录成长...</p>
+            <div class="article-meta">
+              <span class="article-date">2026年3月10日</span>
+              <span class="article-readtime">4 分钟阅读</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+            <span class="article-category">技术</span>
+          </div>
+          <div class="article-content">
+            <h3 class="article-title">
+              <a href="article-detail.html?id=4">Git 常用命令速查</a>
+            </h3>
+            <p class="article-excerpt">整理日常开发中最常用的 Git 命令，方便快速查阅和复习...</p>
+            <div class="article-meta">
+              <span class="article-date">2026年3月5日</span>
+              <span class="article-readtime">6 分钟阅读</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+            <span class="article-category">生活</span>
+          </div>
+          <div class="article-content">
+            <h3 class="article-title">
+              <a href="article-detail.html?id=5">周末的咖啡时光</a>
+            </h3>
+            <p class="article-excerpt">在繁忙的工作之余，找一个安静的角落，享受一杯好咖啡带来的宁静...</p>
+            <div class="article-meta">
+              <span class="article-date">2026年2月28日</span>
+              <span class="article-readtime">2 分钟阅读</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+            <span class="article-category">随笔</span>
+          </div>
+          <div class="article-content">
+            <h3 class="article-title">
+              <a href="article-detail.html?id=6">关于习惯养成的一些思考</a>
+            </h3>
+            <p class="article-excerpt">习惯的力量是巨大的，分享我养成好习惯的一些心得和方法...</p>
+            <div class="article-meta">
+              <span class="article-date">2026年2月20日</span>
+              <span class="article-readtime">4 分钟阅读</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>June的花园</h3>
+          <p>记录生活，分享思考</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">首页</a>
+          <a href="articles.html">文章</a>
+          <a href="about.html">关于</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 我的博客. 保留所有权利。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

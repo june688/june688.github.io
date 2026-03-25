@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章详情 | June的花园</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">我的博客</a>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="articles.html">文章</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- 文章详情 -->
+  <article class="article-detail">
+    <header class="article-header">
+      <span class="article-category" id="articleCategory">技术</span>
+      <h1 id="articleTitle">如何开始学习前端开发</h1>
+      <div class="article-meta">
+        <span id="articleDate">2026年3月20日</span>
+        <span id="articleReadtime">5 分钟阅读</span>
+      </div>
+    </header>
+
+    <div class="article-body" id="articleContent">
+      <p>前端开发是当今最热门的技术领域之一，它负责构建用户直接交互的网页界面。对于初学者来说，前端开发是一个很好的入门选择，因为你只需要一个浏览器和文本编辑器就可以开始学习和实践。</p>
+
+      <h2>为什么要学习前端开发？</h2>
+      <p>前端开发有着广阔的职业前景和灵活的工作方式。无论你是想成为一名专业的开发者，还是只是想为自己的项目搭建一个网站，前端技能都是非常有价值的。</p>
+
+      <h2>学习路线</h2>
+      <h3>1. HTML - 网页的骨架</h3>
+      <p>HTML（超文本标记语言）是构建网页的基础。它定义了网页的结构和内容。你需要学习：</p>
+      <ul>
+        <li>常用的 HTML 标签（div、p、h1-h6、img、a 等）</li>
+        <li>HTML5 新增语义化标签</li>
+        <li>表单元素和属性</li>
+        <li>HTML 文档结构</li>
+      </ul>
+
+      <h3>2. CSS - 网页的样式</h3>
+      <p>CSS（层叠样式表）负责网页的视觉呈现。学习 CSS 时，重点关注：</p>
+      <ul>
+        <li>选择器和优先级</li>
+        <li>盒模型（Box Model）</li>
+        <li>Flexbox 布局</li>
+        <li>Grid 布局</li>
+        <li>响应式设计</li>
+        <li>CSS 动画</li>
+      </ul>
+
+      <h3>3. JavaScript - 网页的交互</h3>
+      <p>JavaScript 让网页变得生动和交互。核心概念包括：</p>
+      <ul>
+        <li>变量、数据类型、运算符</li>
+        <li>条件语句和循环</li>
+        <li>函数和作用域</li>
+        <li>DOM 操作</li>
+        <li>事件处理</li>
+        <li>异步编程（Promise、async/await）</li>
+      </ul>
+
+      <h2>实践项目</h2>
+      <p>理论学习之后，最重要的是动手实践。以下是一些适合初学者的项目：</p>
+      <ol>
+        <li><strong>个人博客</strong> - 展示你的学习历程和项目</li>
+        <li><strong>待办事项应用</strong> - 练习 DOM 操作和事件处理</li>
+        <li><strong>天气预报应用</strong> - 学习 API 调用和数据处理</li>
+        <li><strong>响应式着陆页</strong> - 掌握现代 CSS 布局技术</li>
+      </ol>
+
+      <h2>推荐学习资源</h2>
+      <ul>
+        <li>MDN Web Docs - 最权威的 Web 技术文档</li>
+        <li>freeCodeCamp - 免费的编程学习平台</li>
+        <li>JavaScript.info - 深入理解 JavaScript</li>
+        <li>CSS-Tricks - CSS 技巧和教程</li>
+      </ul>
+
+      <h2>总结</h2>
+      <p>学习前端开发是一个循序渐进的过程。不要急于求成，打好基础非常重要。保持好奇心，多动手实践，你会在这个领域不断成长。</p>
+
+      <p>记住，每个优秀的开发者都是从 Hello World 开始的。祝你学习愉快！</p>
+    </div>
+  </article>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>我的博客</h3>
+          <p>记录生活，分享思考</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">首页</a>
+          <a href="articles.html">文章</a>
+          <a href="about.html">关于</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 我的博客. 保留所有权利。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // 简单的文章数据（实际项目中可以从后端 API 获取）
+    const articles = {
+      1: {
+        title: "如何开始学习前端开发",
+        category: "技术",
+        date: "2026年3月20日",
+        readtime: "5 分钟阅读"
+      },
+      2: {
+        title: "我的 2026 年度计划",
+        category: "生活",
+        date: "2026年3月15日",
+        readtime: "3 分钟阅读"
+      },
+      3: {
+        title: "写作的意义",
+        category: "随笔",
+        date: "2026年3月10日",
+        readtime: "4 分钟阅读"
+      }
+    };
+
+    // 根据 URL 参数加载文章
+    const urlParams = new URLSearchParams(window.location.search);
+    const articleId = urlParams.get('id');
+    
+    if (articleId && articles[articleId]) {
+      const article = articles[articleId];
+      document.getElementById('articleTitle').textContent = article.title;
+      document.getElementById('articleCategory').textContent = article.category;
+      document.getElementById('articleDate').textContent = article.date;
+      document.getElementById('articleReadtime').textContent = article.readtime;
+      document.title = article.title + " | June的花园";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的博客 | 记录生活与思考</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">June的花园</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">首页</a></li>
+        <li><a href="articles.html">文章</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- 英雄区域 -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>你好，我是 <span class="highlight">June</span></h1>
+      <p class="hero-desc">在这里记录我的学习、思考与生活点滴</p>
+      <div class="hero-buttons">
+        <a href="articles.html" class="btn btn-primary">浏览文章</a>
+        <a href="about.html" class="btn btn-secondary">了解更多</a>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="floating-card card-1">💡</div>
+      <div class="floating-card card-2">✍️</div>
+      <div class="floating-card card-3">🚀</div>
+    </div>
+  </header>
+
+  <!-- 最新文章 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">最新文章</h2>
+      <div class="articles-grid">
+        <article class="article-card">
+          <div class="article-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <span class="article-category">技术</span>
+          </div>
+          <div class="article-content">
+            <h3 class="article-title">
+              <a href="article-detail.html?id=1">如何开始学习前端开发</a>
+            </h3>
+            <p class="article-excerpt">从零开始的前端学习路线，包含 HTML、CSS、JavaScript 的学习资源和实践建议...</p>
+            <div class="article-meta">
+              <span class="article-date">2026年3月20日</span>
+              <span class="article-readtime">5 分钟阅读</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <span class="article-category">生活</span>
+          </div>
+          <div class="article-content">
+            <h3 class="article-title">
+              <a href="article-detail.html?id=2">我的 2026 年度计划</a>
+            </h3>
+            <p class="article-excerpt">新的一年，新的目标。分享我在学习、工作和生活中的规划与期待...</p>
+            <div class="article-meta">
+              <span class="article-date">2026年3月15日</span>
+              <span class="article-readtime">3 分钟阅读</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <span class="article-category">随笔</span>
+          </div>
+          <div class="article-content">
+            <h3 class="article-title">
+              <a href="article-detail.html?id=3">写作的意义</a>
+            </h3>
+            <p class="article-excerpt">为什么我开始写博客？写作如何帮助我整理思绪、记录成长...</p>
+            <div class="article-meta">
+              <span class="article-date">2026年3月10日</span>
+              <span class="article-readtime">4 分钟阅读</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="text-center">
+        <a href="articles.html" class="btn btn-outline">查看全部文章</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我 -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="about-preview">
+        <div class="about-image">
+          <div class="avatar-placeholder">👤</div>
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">关于我</h2>
+          <p>热爱技术，喜欢分享。在这里记录我的学习历程、技术心得和生活感悟。</p>
+          <p>相信持续学习和写作的力量，希望通过博客与更多志同道合的朋友交流。</p>
+          <a href="about.html" class="btn btn-primary">了解更多</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>June的花园</h3>
+          <p>记录生活，分享思考</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">首页</a>
+          <a href="articles.html">文章</a>
+          <a href="about.html">关于</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 June的花园. 保留所有权利。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
